@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/create.css">
+    <title>LabMaster</title>
+</head>
+<body>
+    <header class="header">
+        <div class="for-logo">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.jpg" alt="">
+            </a>
+            <a href="index.html" class="nav-labmaster">LabMaster</a>
+        </div>
+        <p class="page-name">МЕНЮ СОЗДАНИЯ</p>
+        <nav class="header-nav">
+            <a class="works" href="works.html">Работы</a>
+            <a class="create" href="create.html">Создать</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main-titles">
+            <div class="names">
+                <div class="names-flex">
+                    <p>Название</p>
+                    <span class="toggle-icon show"></span>
+                </div>
+                <div class="container-names">
+                    <div class="search-bar">
+                        <input type="text" id="nameSearch" placeholder="Поиск...">
+                    </div>
+                    <div class="name-list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards-flex">
+                    <p>Карточка</p>
+                    <span class="toggle-icon show uploadButton"></span>
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+                <div class="container">
+                    <button id="scrollUp" class="scroll-button up"></button>
+                    <div class="card-list">
+                        <div class="card" data-predefined><img src="img/ВМ.jpg" alt="" class="bebra"></div>
+                        <div class="card" data-predefined><img src="img/userCard.png" alt="" class="bebra"></div>
+                        <div class="card" data-predefined><img src="img/eng.png" alt="" class="bebra"></div>
+                        <div class="card" data-predefined><img src="img/sport.png" alt="" class="bebra"></div>
+                    </div>
+                    <button id="scrollDown" class="scroll-button down"></button>
+                </div>
+            </div>
+            <div class="languages">
+                <div class="languages-flex">
+                    <p>Язык</p>
+                </div>
+                <div class="container-languages">
+                    <div class="search-bar">
+                        <input type="text" id="languageSearch" placeholder="Поиск...">
+                    </div>
+                    <div class="language-list">
+                        <div class="language">Python</div>
+                        <div class="language">C++</div>
+                        <div class="language">C#</div>
+                        <div class="language">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="submitBtn">Отправить</button>
+    </main>
+    <script src="js/create.js"></script>
+</body>
+</html>
